@@ -10,7 +10,9 @@ import Marketplace from "./pages/Marketplace"
 import CreateEvent from "./pages/CreateEvent"
 import MyTickets from "./pages/MyTickets"
 import SwapTokens from "./pages/SwapTokens"
-  
+import {Route, Routes} from   'react-router-dom'
+
+
   const App = () => {
     const classes = useStyles()
     const {
@@ -64,10 +66,19 @@ import SwapTokens from "./pages/SwapTokens"
   
     return (
       <BrowserRouter>
+     
       <div className={classes.bgCover}>
       <NavBar/>
+
+      <Routes>
+        <Route path ="/" element={<Home/>}></Route>
+        <Route path ="/marketplace" element={<Marketplace/>}></Route>
+        <Route path ="/create" element={<CreateEvent/>}></Route>
+        <Route path ="/mytickets" element={<MyTickets/>}></Route>
+        <Route path ="/swap" element={<SwapTokens/>}></Route>
+      </Routes>
   
-      <div>{component}</div>
+      
         <main className={classes.container}>
           
           

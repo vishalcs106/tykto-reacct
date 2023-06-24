@@ -66,13 +66,13 @@ p {
 .form-container {
   max-width: 100%;
   margin: 0 auto;
-  display: inline-block;
+  display: flex;
   align-items: center;
   align-content: center;
   justify-content: center;
   justify-items: center;
   justify-self: center;
-  
+  padding-left: 120px;
 }
 
 label {
